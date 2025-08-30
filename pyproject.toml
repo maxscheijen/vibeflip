@@ -1,0 +1,23 @@
+[project]
+name = "vibeflip"
+version = "0.1.0"
+description = "Coin flip library that uses GPT for true randomness"
+readme = "README.md"
+authors = [
+    { name = "Max Scheijen", email = "maxscheijen@protonmail.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "openai>=1.102.0",
+    "pydantic>=2.11.7",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.12.11",
+    "ty>=0.0.1a19",
+]
